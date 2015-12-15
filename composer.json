@@ -1,0 +1,18 @@
+{
+    "name": "aranajhonny/platzi_php",
+    "description": "app en php platzi.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "aranajhonny",
+            "email": "jhonnyjosearana@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "PlatziPHP\\": "src"
+        }
+    }
+}
