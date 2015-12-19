@@ -9,7 +9,9 @@
             "email": "jhonnyjosearana@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "illuminate/http": "^5.1"
+    },
     "autoload": {
         "psr-4": {
             "PlatziPHP\\": "src"

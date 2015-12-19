@@ -5,13 +5,13 @@ namespace PlatziPHP;
 */
 
 class User {
-	/**
+   /**
 	* @type string
 	*/
 	protected $email;
 	/**
-	* @type string
-	*/
+	  * @type string
+	  */
 	protected $password;
 	/**
 	* @type string
