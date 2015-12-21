@@ -9,7 +9,11 @@
         <h2><?= $post->getTitle() ?>
             <small><?= $post->getAuthor() ?></small>
         </h2>
-        <p><?= $post->getBody() ?></p>
+        <?php if($post == $firstPost):?>
+            <p><?= $post->getBody() ?></p>
+            <?php else: ?>
+            <p>Summary...</p>
+            <?php endif; ?>
 
     </li>
 
