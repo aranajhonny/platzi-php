@@ -3,11 +3,13 @@
 
  use Illuminate\Support\Collection;
 
- class FakeDatabase{
+ class FakeDatabase
+ {
      /**
       * @return Collection
       */
-     public function posts(){
+     public function posts()
+     {
 
          $author = new Author(
              'Anemail@foo.bar',

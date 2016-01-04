@@ -1,7 +1,8 @@
 <?php 
 namespace PlatziPHP;
 
-class Post{
+class Post
+{
 
     private $author;
 
@@ -9,7 +10,8 @@ class Post{
 
     private $body;
 
-    public function __construct(Author $author, $title, $body){
+    public function __construct(Author $author, $title, $body)
+    {
 
         $this->author = $author;
         $this->title = $title;
@@ -17,15 +19,18 @@ class Post{
 
     }
 
-    public function getTitle(){
+    public function getTitle()
+    {
         return $this->title;
     }
 
-    public function getBody(){
+    public function getBody()
+    {
         return $this->body;
     }  
 
-    public function getAuthor(){
+    public function getAuthor()
+    {
 
         return 'By ' . $this->author->getFirstName();
     }

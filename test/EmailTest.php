@@ -2,9 +2,10 @@
 
 use PlatziPHP\Email;
 
-class EmailTest extends PHPunit_Framework_TestCase{
-
-    function test_email_is_valid(){
+class EmailTest extends PHPunit_Framework_TestCase
+{
+    function test_email_is_valid()
+    {
 
 
         $email = new Email('jhonnyarana@gmail.com');
@@ -15,7 +16,8 @@ class EmailTest extends PHPunit_Framework_TestCase{
             );
     }
 
-    function test_email_is_invalid(){
+    function test_email_is_invalid()
+    {
 
             $this->setExpectedException(
 

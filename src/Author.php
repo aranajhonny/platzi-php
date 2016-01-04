@@ -1,9 +1,11 @@
 <?php 
 namespace PlatziPHP;
 
-class Author extends User{
+class Author extends User
+{
 
-    public function __construct($email,$password,$key){
+    public function __construct($email,$password,$key)
+    {
 
         parent::__construct($email, $password);
 
@@ -13,7 +15,8 @@ class Author extends User{
         }
     }
 
-	public function getLastName(){
+	public function getLastName()
+    {
 		return $this->lastName;
 	}
 

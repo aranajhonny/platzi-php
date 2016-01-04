@@ -2,9 +2,11 @@
 
 use PlatziPHP\Author;
 
-class AuthorTest extends PHPUnit_Framework_TestCase{
+class AuthorTest extends PHPUnit_Framework_TestCase
+{
     /** @test */
-    function it_should_construct(){
+    function it_should_construct()
+    {
 
         $author = new Author(
             'Anemail@foo.bar',
@@ -17,7 +19,8 @@ class AuthorTest extends PHPUnit_Framework_TestCase{
 
     }
     /** @test */
-    function it_should_fail_when_no_key(){
+    function it_should_fail_when_no_key()
+    {
 
          $this->setExpectedException(\InvalidArgumentException::class);
 

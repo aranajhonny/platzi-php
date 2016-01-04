@@ -7,15 +7,18 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Router;
 use PlatziPHP\Http\Controllers\HomeController;
 
-class Application{
+class Application
+{
     private $container;
 
-    public function __construct(Container $container){
+    public function __construct(Container $container)
+    {
 
         $this->container = $container;
     }
 
-    public function run(){
+    public function run()
+    {
 
         $router = new Router(
             new Dispatcher($this->container),

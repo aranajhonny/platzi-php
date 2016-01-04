@@ -2,9 +2,11 @@
 
 use PlatziPHP\Post;
 
-class PostTest extends PHPunit_Framework_TestCase{
+class PostTest extends PHPunit_Framework_TestCase
+{
     /** @test */
-    function it_gives_us_the_author_name(){
+    function it_gives_us_the_author_name()
+    {
 
         $author = new \PlatziPHP\Author(
             'mail',

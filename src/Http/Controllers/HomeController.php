@@ -7,13 +7,15 @@ use Illuminate\Routing\Controller;
 use PlatziPHP\FakeDatabase;
 use PlatziPHP\Http\Views\View;
 
-class HomeController extends Controller{
+class HomeController extends Controller
+{
     /**
      * @var FakeDatabase
      */
     private $db;
 
-    public function __construct(FakeDatabase $db){
+    public function __construct(FakeDatabase $db)
+    {
 
         $this->db = $db;
     }
@@ -33,7 +35,8 @@ class HomeController extends Controller{
         return $view->render();
     }
 
-    public function show($id){
+    public function show($id)
+    {
         $post = $this->db->posts();
 
 

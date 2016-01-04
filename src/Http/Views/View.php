@@ -4,12 +4,14 @@ namespace PlatziPHP\Http\Views;
 
 use Illuminate\Http\Response;
 
-class View{
+class View
+{
     private $template;
 
     private $params;
 
-    public function __construct($template, array $params = []){
+    public function __construct($template, array $params = [])
+    {
         $this->template = $template;
         $this->params = $params;
     }
@@ -17,7 +19,8 @@ class View{
     /**
      * @return Response
      */
-    public function render(){
+    public function render()
+    {
         $content = $this->loadTemplate();
 
         $response = new Response($content);
@@ -36,8 +39,10 @@ class View{
             $this->params
         );
     }
-        private function includeTemplateFromFile($path, $params){
-        if (file_exists($path)) {
+        private function includeTemplateFromFile($path, $params)
+        {
+        if (file_exists($path))
+        {
 
             extract($params);
 
