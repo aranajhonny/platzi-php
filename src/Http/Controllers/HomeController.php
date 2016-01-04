@@ -4,24 +4,20 @@ namespace PlatziPHP\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use PlatziPHP\Infrastructure\FakeDatabase;
+use PlatziPHP\Domain\Imprint;
 use PlatziPHP\Http\Views\View;
 
 class HomeController extends Controller
 {
-    /**
-     * @var FakeDatabase
-     */
-    private $db;
+    private $Imprint;       
 
-    public function __construct(FakeDatabase $db)
+    public function __construct(Imprint $Imprint)
     {
-
-        $this->db = $db;
+        $this->Imprint = $Imprint;
     }
     public function index(Request $request)
     {
-        $posts = $this->db->posts();
+        $posts = $this->Imprint->listPublishedPost();
 
         $first = $posts->first();
 
@@ -37,7 +33,7 @@ class HomeController extends Controller
 
     public function show($id)
     {
-        $post = $this->db->posts();
+        $post = $this->Imprint->listPublishedPost();
 
 
         $view = new View('post_details',[
