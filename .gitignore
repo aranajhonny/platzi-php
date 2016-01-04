@@ -1,3 +1,2 @@
 /vendor/
-/.phpintel/
-/.idea/
+/node_modules/
