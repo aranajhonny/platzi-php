@@ -8,10 +8,10 @@ class EmailTest extends PHPunit_Framework_TestCase
     {
 
 
-        $email = new Email('jhonnyarana@gmail.com');
+        $email = new PlatziPHP\Domain\Email('jhonnyarana@gmail.com');
 
         $this->assertInstanceOf(
-                Email::class,
+            PlatziPHP\Domain\Email::class,
                 $email
             );
     }
@@ -25,7 +25,7 @@ class EmailTest extends PHPunit_Framework_TestCase
             
                 );
 
-            $email = new Email('estonoewsunemail');
+            $email = new PlatziPHP\Domain\Email('estonoewsunemail');
     }
 
 

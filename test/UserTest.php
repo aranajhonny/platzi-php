@@ -1,6 +1,6 @@
 <?php  
 
-use PlatziPHP\User;
+use PlatziPHP\Domain\User;
 
 class UserTest extends PHPUnit_Framework_TestCase
 {
@@ -11,7 +11,7 @@ class UserTest extends PHPUnit_Framework_TestCase
 
         $user = new User('jhonny@gmail.com', 'platzi');
 
-        $this->assertInstanceOf(\PlatziPHP\User::class, $user);
+        $this->assertInstanceOf(\PlatziPHP\Domain\User::class, $user);
     }
     /** @test */
     function it_shoul_have_a_first_name()
