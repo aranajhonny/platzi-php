@@ -2,6 +2,8 @@
  namespace PlatziPHP;
 
  use Illuminate\Support\Collection;
+ use PlatziPHP\Domain\Author;
+ use PlatziPHP\Domain\Post;
 
  class FakeDatabase
  {

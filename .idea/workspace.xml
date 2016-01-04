@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f2dd8d1-50ca-44d6-afb5-1c44169cd91e" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Author.php" afterPath="$PROJECT_DIR$/src/Domain/Author.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Email.php" afterPath="$PROJECT_DIR$/src/Domain/Email.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Post.php" afterPath="$PROJECT_DIR$/src/Domain/Post.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/User.php" afterPath="$PROJECT_DIR$/src/Domain/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/AuthorTest.php" afterPath="$PROJECT_DIR$/test/AuthorTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/EmailTest.php" afterPath="$PROJECT_DIR$/test/EmailTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/PostTest.php" afterPath="$PROJECT_DIR$/test/PostTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/UserTest.php" afterPath="$PROJECT_DIR$/test/UserTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FakeDatabase.php" afterPath="$PROJECT_DIR$/src/FakeDatabase.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="platzi-php.iws" />
@@ -38,51 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617">
+            <state vertical-scroll-proportion="0.20286396">
               <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthorTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/AuthorTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3076923">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmailTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/EmailTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.26923">
-              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PostTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/PostTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.923077">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserTest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/UserTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5680191">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -107,7 +60,6 @@
         <option value="$PROJECT_DIR$/src/Application.php" />
         <option value="$PROJECT_DIR$/src/Author.php" />
         <option value="$PROJECT_DIR$/src/Email.php" />
-        <option value="$PROJECT_DIR$/src/FakeDatabase.php" />
         <option value="$PROJECT_DIR$/src/Post.php" />
         <option value="$PROJECT_DIR$/src/User.php" />
         <option value="$PROJECT_DIR$/src/Domain/Email.php" />
@@ -118,6 +70,7 @@
         <option value="$PROJECT_DIR$/test/EmailTest.php" />
         <option value="$PROJECT_DIR$/test/PostTest.php" />
         <option value="$PROJECT_DIR$/test/UserTest.php" />
+        <option value="$PROJECT_DIR$/src/FakeDatabase.php" />
       </list>
     </option>
   </component>
@@ -395,7 +348,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="e#30#64#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -625,22 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FakeDatabase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5883055">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Application.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.653847">
@@ -709,8 +648,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/UserTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5680191">
+        <state vertical-scroll-proportion="-18.307692">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FakeDatabase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28400955">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#30#64#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20286396">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
