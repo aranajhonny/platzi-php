@@ -1,11 +1,17 @@
 <?php
 namespace PlatziPHP\Infrastructure;
 
+use PlatziPHP\Domain\EntityNotFound;
 use Illuminate\Support\Collection;
 use PlatziPHP\Domain\Post;
 
-class PostRepository
+class PostRepository extends BaseRepository
 {
+    protected function table()
+    {
+        return 'posts';
+    }
+
     public function all()
     {
         $pdo = $this->getPDO();
@@ -21,33 +27,6 @@ class PostRepository
         );
     }
 
-    /**
-     * @param $id
-     * @return Post
-     */
-
-    public function find($id)
-    {
-        $pdo = $this->getPDO();
-
-        $statement = $pdo->prepare(
-            'SELECT * FROM posts WHERE id = :id'
-        );
-        $statement->bindParam(':id', $id, \PDO::PARAM_INT);
-        $statement->execute();
-        $result = $statement->fetch();
-
-        if($result === false){
-            throw new \OutOfBoundsException("Post $id does not exist");
-        }
-
-        return $this->mapPost($result);
-    }
-
-    /**
-     * @param $query
-     * @return Collection
-     */
     public function search($query){
         $pdo = $this->getPDO();
 
@@ -60,38 +39,20 @@ class PostRepository
 
         return $this->mapToPosts($statement->fetchAll());
     }
-    /**
-     * @return \PDO
-     */
-    private function getPDO()
-    {
-        return new \PDO(
-            'mysql:host=127.0.0.1; dbname=platziphp',
-            'root' ,
-            'root'
-            );
-    }
 
-    /**
-     * @param array $results
-     * @return Collection
-     */
     private function mapToPosts(array $results)
     {
         $posts = new Collection();
 
         foreach ($results as $result){
-                $post = $this->mapPost($result);
+                $post = $this->mapEntity($result);
                 $posts->push($post);
         }
             return $posts;
     }
 
-    /**
-     * @param array $result
-     * @return Post
-     */
-    private function mapPost(array $result){
+
+    protected function mapEntity(array $result){
         return new Post(
             $result['authorId'],
             $result['title'],
