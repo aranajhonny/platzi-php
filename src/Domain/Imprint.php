@@ -1,7 +1,5 @@
 <?php
-
 namespace PlatziPHP\Domain;
-
 
 use PlatziPHP\Infrastructure\PostRepository;
 
@@ -12,7 +10,7 @@ class Imprint
      */
     private $posts;
 
-    public function __construct(PostRepository $posts )
+    public function __construct(PostRepository $posts)
     {
         $this->posts = $posts;
     }
@@ -20,7 +18,7 @@ class Imprint
     /**
      * @return \Illuminate\Support\Collection
      */
-    public function listPublishedPost()
+    public function listPublishedPosts()
     {
         return $this->posts->all();
     }

@@ -1,23 +1,18 @@
-<?php 
+<?php
 namespace PlatziPHP\Domain;
 
 class Author extends User
 {
-
-    public function __construct($email,$password,$key)
+    public function __construct($email, $password, $key)
     {
-
         parent::__construct($email, $password);
 
-        if ($key != 'Authordeplatzi') {
-            throw new \InvalidArgumentException("invalid key given.");
-            
+        if ($key != 'AUTOR_DE_PLATZI') {
+            throw new \InvalidArgumentException("Invalid key given.");
         }
     }
-
-	public function getLastName()
+    public function getLastName()
     {
-		return $this->lastName;
-	}
-
+        return $this->lastName;
+    }
 }

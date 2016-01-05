@@ -1,4 +1,4 @@
-<?php 
+<?php
 namespace PlatziPHP\Domain;
 
 use PlatziPHP\Infrastructure\AuthorRepository;
@@ -20,9 +20,10 @@ class Post
         $this->body = $body;
         $this->id = $id;
     }
+
     public static function create(Author $author, $title, $body)
     {
-        $post = new Post($author, $title,  $body);
+        $post = new Post($author, $title, $body);
 
         return $post;
     }
@@ -35,22 +36,20 @@ class Post
     public function getBody()
     {
         return $this->body;
-    }  
+    }
 
     public function getAuthor()
     {
-        return 'By ' . $this->author->getFirstName();
+        return 'by ' . $this->author->getFirstName();
     }
+
     private function setAuthor($author)
     {
         if ($author instanceof Author) {
-
             $this->author = $author;
-
         } else {
             $repository = new AuthorRepository();
-            $this->author= $repository->find($author);
+            $this->author = $repository->find($author);
         }
     }
-
 }

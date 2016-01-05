@@ -13,13 +13,11 @@ class Application
 
     public function __construct(Container $container)
     {
-
         $this->container = $container;
     }
 
     public function run()
     {
-
         $router = new Router(
             new Dispatcher($this->container),
             $this->container
@@ -31,7 +29,5 @@ class Application
         $response = $router->dispatch(Request::capture());
 
         $response->send();
-
     }
-
 }

@@ -30,7 +30,7 @@ class View
     private function loadTemplate()
     {
         $path = dirname(dirname(dirname(__DIR__))) .
-            '/resources/views';
+        '/resources/views';
 
         $templatePath = "$path/{$this->template}.php";
 
@@ -39,15 +39,13 @@ class View
             $this->params
         );
     }
-        private function includeTemplateFromFile($path, $params)
-        {
-        if (file_exists($path))
-        {
 
+    private function includeTemplateFromFile($path, $params)
+    {
+        if (file_exists($path)) {
             extract($params);
 
             ob_start();
-
             require $path;
 
             return ob_get_clean();
