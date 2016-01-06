@@ -29,7 +29,6 @@ before_script:
   - echo "USE mysql;\nUPDATE user SET password=PASSWORD('root') WHERE user='root';\nFLUSH PRIVILEGES;\n" | mysql -u root
   - mysql -e 'create database IF NOT EXISTS platziphp;'
   - mysql -e "use platziphp;"
-  - mysql -e "USE mysql;
   	CREATE TABLE `posts` (
   `id` int(100) NOT NULL,
   `author_id` int(100) NOT NULL,
