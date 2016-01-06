@@ -1,5 +1,5 @@
 test:
   adapter: mysql2
-  database: platziphp
-  username: root
+  database: myapp_test
+  username: travis
   encoding: utf8

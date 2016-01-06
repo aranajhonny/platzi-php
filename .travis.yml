@@ -28,5 +28,5 @@ script: vendor/bin/phpunit test
 services:
   - mysql
 before_script:
-  - mysql -e 'create database platziphp;'
+  - mysql -e 'create database myapp_test;'
   - mysql -e "create database IF NOT EXISTS test;" -uroot
