@@ -40,7 +40,7 @@ class Post
 
     public function getAuthor()
     {
-        return 'by ' . $this->author->getFirstName();
+        return 'By ' . $this->author->getFirstName();
     }
 
     private function setAuthor($author)

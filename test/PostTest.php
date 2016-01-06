@@ -1,6 +1,5 @@
-<?php  
+<?php
 
-use PlatziPHP\Post;
 
 class PostTest extends PHPunit_Framework_TestCase
 {
@@ -11,7 +10,7 @@ class PostTest extends PHPunit_Framework_TestCase
         $author = new \PlatziPHP\Domain\Author(
             'mail',
             '1234',
-            'Authordeplatzi'
+            'AUTOR_DE_PLATZI'
             );
 
         $author->setName('jhonny','arana');
