@@ -23,7 +23,6 @@ install:
   - if [[ $setup = 'lowest' ]]; then travis_retry composer update --prefer-source --no-interaction --prefer-lowest --prefer-stable; fi
 
 script: vendor/bin/phpunit test
-
 services:
   - mysql
 before_script:
