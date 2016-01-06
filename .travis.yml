@@ -3,9 +3,10 @@ php:
 - 5.5
 - 7.0
 - hhvm
-install:
-    - composer self-update && composer --version
-    - composer install 
+# Commands to be run before your environment runs.
+before_script:
+  - composer self-update
+  - composer install --prefer-source --no-interaction --dev
 script: phpunit test
 
 
