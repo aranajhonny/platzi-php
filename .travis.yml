@@ -5,7 +5,7 @@ php:
 - hhvm
 install:
     - composer self-update && composer --version
-    - composer install --prefer-dist --dev
+    - composer install 
 script: phpunit test
 
 
